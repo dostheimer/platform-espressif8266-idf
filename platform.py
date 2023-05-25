@@ -15,7 +15,7 @@
 from platformio.public import PlatformBase
 
 
-class Espressif8266Platform(PlatformBase):
+class Espressif8266idfPlatform(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         framework = variables.get("pioframework", [])
