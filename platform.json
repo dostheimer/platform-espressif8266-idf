@@ -105,6 +105,21 @@
       "optional": true,
       "owner": "platformio",
       "version": "~1.203.0"
+    },
+    "tool-cmake": {
+      "optional": true,
+      "owner": "platformio",
+      "version": "~3.16.0"
+    },
+    "tool-ninja": {
+      "optional": true,
+      "owner": "platformio",
+      "version": "^1.7.0"
+    },
+    "tool-mconf": {
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.4060000.0"
     }
   }
 }
