@@ -19,8 +19,6 @@
   },
   "version": "4.2.1",
   "packageRepositories": [
-    "https://dl.bintray.com/platformio/dl-packages/manifest.json", 
-    "http://dl.platformio.org/packages/manifest.json",
     "https://github.com/dostheimer/xtensa-lx106-elf/raw/master/manifest.json"
   ],
   "frameworks": {
@@ -59,7 +57,7 @@
     },
     "toolchain-xtensa-lx106-elf": {
       "type": "toolchain",
-      "version": "8.4.0+esp2020r3"
+      "version": "https://github.com/dostheimer/xtensa-lx106-elf.git"
     },
     "framework-arduinoespressif8266": {
       "type": "framework",
