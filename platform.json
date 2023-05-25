@@ -59,7 +59,7 @@
     },
     "toolchain-xtensa-lx106-elf": {
       "type": "toolchain",
-      "version": "8.4.0+esp2020r3",
+      "version": "8.4.0+esp2020r3"
     },
     "framework-arduinoespressif8266": {
       "type": "framework",
