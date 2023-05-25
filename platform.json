@@ -1,6 +1,6 @@
 {
-  "name": "espressif8266",
-  "title": "Espressif 8266",
+  "name": "espressif8266-idf",
+  "title": "Espressif 8266-IDF",
   "description": "ESP8266 is a cost-effective and highly integrated Wi-Fi MCU with built-in TCP/IP networking software for IoT applications. ESP8266 integrates an enhanced version of Tensilica’s L106 Diamond series 32-bit processor and on-chip SRAM.",
   "homepage": "https://espressif.com/",
   "license": "Apache-2.0",
@@ -15,9 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/platformio/platform-espressif8266.git"
+    "url": "https://github.com/dostheimer/platform-espressif8266-idf.git"
   },
-  "version": "4.2.0",
+  "version": "4.2.1",
+  "packageRepositories": [
+    "https://dl.bintray.com/platformio/dl-packages/manifest.json", 
+    "http://dl.platformio.org/packages/manifest.json",
+    "https://github.com/dostheimer/xtensa-lx106-elf/raw/master/manifest.json"
+  ],
   "frameworks": {
     "arduino": {
       "package": "framework-arduinoespressif8266",
@@ -36,6 +41,13 @@
       "description": "The non-OS SDK provides a set of application programming interfaces (APIs) for core ESP8266 functionalities such as data reception/transmission over Wi-Fi, TCP/IP stack functions, hardware interface functions and basic system management functions",
       "homepage": "https://github.com/espressif/ESP8266_NONOS_SDK",
       "title": "ESP8266 Non-OS SDK"
+    },
+    "esp8266-rtos-idf-sdk": {
+      "package": "framework-esp8266-rtos-idf-sdk",
+      "script": "builder/frameworks/esp8266-rtos-idf-sdk.py",
+      "description": "ESP8266 IDF SDK based on FreeRTOS, a truly free professional grade RTOS for microcontrollers",
+      "homepage": "https://github.com/espressif/ESP8266_RTOS_SDK",
+      "title": "ESP8266 RTOS IDF SDK"
     }
   },
   "packages": {
@@ -44,6 +56,10 @@
       "owner": "platformio",
       "version": "~2.100300.0",
       "optionalVersions": ["~1.40802.0"]
+    },
+    "toolchain-xtensa-lx106-elf": {
+      "type": "toolchain",
+      "version": "8.4.0+esp2020r3",
     },
     "framework-arduinoespressif8266": {
       "type": "framework",
@@ -62,6 +78,11 @@
       "optional": true,
       "owner": "platformio",
       "version": ">=2.1.0"
+    },
+    "framework-esp8266-rtos-idf-sdk": {
+      "type": "framework",
+      "optional": true,
+      "version": "https://github.com/espressif/ESP8266_RTOS_SDK.git"
     },
     "tool-esptool": {
       "type": "uploader",
