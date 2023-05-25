@@ -17,7 +17,8 @@
   "frameworks": [
     "arduino",
     "esp8266-rtos-sdk",
-    "esp8266-nonos-sdk"
+    "esp8266-nonos-sdk",
+    "esp8266-rtos-idf-sdk"
   ],
   "name": "Espressif Generic ESP8266 ESP-01 1M",
   "upload": {

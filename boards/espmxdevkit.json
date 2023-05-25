@@ -22,7 +22,8 @@
   "frameworks": [
     "arduino",
     "esp8266-rtos-sdk",
-    "esp8266-nonos-sdk"
+    "esp8266-nonos-sdk",
+    "esp8266-rtos-idf-sdk"
   ],
   "name": "ESP-Mx DevKit (ESP8285)",
   "upload": {
